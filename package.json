@@ -1,0 +1,23 @@
+{
+  "name": "hyperparcel",
+  "version": "1.0.0",
+  "description": "a hyper starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "wipe": "rm -rf .git && git init && git add . && git commit -m 'initial commit'",
+    "deploy": "npm run build && ./scripts/gh-pages.sh"
+  },
+  "author": "alexrdz",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "hyperapp": "^1.0.2"
+  }
+}
