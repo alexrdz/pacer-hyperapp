@@ -7,5 +7,5 @@ const getRequest = url => {
 }
 
 export default {
-  getAll: _ => getRequest('../data/goals.collection.json')
+  getAll: _ => getRequest('./data/goals.collection.json')
 }
