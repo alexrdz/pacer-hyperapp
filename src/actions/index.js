@@ -41,5 +41,20 @@ export default {
     const updatedTasks = Object.assign(state.goalsTasks, updatedTask);
 
     return updatedTasks;
+  },
+  setGoalInput: value => (state) => {
+    return {goalInputText: value.target.value}
+  },
+  addGoal: goalToAdd => (state) => {
+    goalToAdd.preventDefault();
+    
+    return {goals: [...state.goals, {
+      goal: state.goalInputText,
+      goalId: 123123123123,
+      goalTasks: [],
+      created: null
+    }],
+    goalInputText: ''
+  }
   }
 };

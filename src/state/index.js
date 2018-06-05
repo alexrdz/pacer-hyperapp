@@ -1,4 +1,5 @@
 export default {
   goals: [],
-  goalsTasks: []
+  goalsTasks: [],
+  goalInputText: ''
 };
